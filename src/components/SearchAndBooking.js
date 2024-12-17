@@ -17,7 +17,7 @@ const SearchAndBooking = () => {
 
   const fetchPartners = async () => {
     try {
-      const response = await fetch('http://localhost:3000/partners');
+      const response = await fetch('https://db-server1.vercel.app/profiles');
       if (!response.ok) {
         throw new Error('Failed to fetch partners');
       }
