@@ -45,7 +45,7 @@ const UserProfile = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/profiles', {
+      const response = await fetch('https://db-server1.vercel.app/profiles', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

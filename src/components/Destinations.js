@@ -13,7 +13,7 @@ const Destinations = () => {
 
   useEffect(() => {
     // Replace with a real API endpoint
-    fetch('https://server1-navy.vercel.app/destinations')
+    fetch('https://db-server1.vercel.app/destinations')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

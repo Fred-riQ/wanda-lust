@@ -37,7 +37,7 @@ const SearchAndBooking = () => {
     setLoading(true);
     setError('');
     try {
-      const response = await fetch(`http://localhost:3000/destinations/?q=${query}`);
+      const response = await fetch(`https://db-server1.vercel.app/destinations/?q=${query}`);
       if (!response.ok) {
         throw new Error('Failed to fetch destinations');
       }

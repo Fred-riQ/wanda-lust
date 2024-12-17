@@ -16,7 +16,7 @@ const FindPartner = () => {
 
   // Fetch partners data from db.json using useEffect
   useEffect(() => {
-    fetch('https://server1-navy.vercel.app/partners') // URL of the mock API (json-server)
+    fetch('https://db-server1.vercel.app/partners') // URL of the mock API (json-server)
       .then((res) => res.json())
       .then((data) => setPartners(data)) // Store the fetched data in the partners state
       .catch((err) => setError('Failed to fetch partners: ' + err.message));
