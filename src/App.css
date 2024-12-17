@@ -1,28 +1,24 @@
 /* General Styles */
 body {
-  background-image:url(../public/pexels-nurseryart-346885.jpg);
-  background-position:center; 
-  background-repeat: no-repeat;
-  background-size:auto;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #0d0d0d;
+  color:#093737;
 }
 
 a {
   text-decoration:solid;
-  color: #007bff;
+  color: #398ac6;
 }
 
 a:hover {
-  color: #0fe0ef;
+  color: #C67539;
 }
 
 nav {
-  background: linear-gradient(90deg,#24243e, #0984d6, #24243e);
+  background: linear-gradient(90deg,#398AC6, #C67539, #398AC6);
   padding: 1rem;
-  border-bottom: 2px solid #c9b5f1;
+  border-bottom: 2px solid#C67539;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -57,44 +53,19 @@ nav ul li a:hover {
   box-shadow: 0 0 10px #00f2ff, 0 0 10px #00fff5;
   transform: scale(1.1);
 }
-
-
-.home-container {
-  padding: 2.5rem;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-  background: linear-gradient(140deg, rgba(152, 156, 247, 0.3), rgba(6, 8, 60, 0.9));
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
-  border: 2px solid #04eeff;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3);
-  font-family: 'Poppins',sans-serif;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.home-container:hover {
-  transform: scale(1.02);
-  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.5), 0 5px 20px rgba(0, 255, 255, 0.3);
-}
-
 .home-container h1 {
   font-size: 3rem;
-  color: #00fff5;
+  color:#cfc7c7;
   margin-bottom: 1.5rem;
-  text-shadow: 0 0 15px #021137, 0 0 30px #051c70;
+  text-shadow: 0 0 15px #121211, 0 0 30px #3f2a1b ;
 }
-
 .home-container p {
   font-size: 1.3rem;
-  color: #e0e0e0;
+  color: #0b0b0b;
   margin-bottom: 2.5rem;
   line-height: 2.8;
   text-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
 }
-
 /* Home Features Section */
 .home-features {
   display: flex;
@@ -104,7 +75,6 @@ nav ul li a:hover {
   flex-wrap: wrap;
   position: relative;
 }
-
 .home-feature-item {
   border: 2.5px solid #00fff5;
   border-radius: 50px;
@@ -115,19 +85,16 @@ nav ul li a:hover {
   font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #00fff5;
+  color: #0c0c0c;
   background: linear-gradient(135deg, rgba(30, 30, 50, 0.7), rgba(60, 60, 100, 0.7));
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease;
 }
-
 .home-feature-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 40px #00fff5, 0 0 15px #03f7ee;
   background: linear-gradient(135deg, rgba(50, 50, 80, 0.9), rgba(80, 80, 140, 1));
 }
-
-
 .destinations-container {
   padding: 0.01rem;
   width: 100%;
@@ -141,8 +108,6 @@ nav ul li a:hover {
   border-radius: 0;
   
 }
-
-
 .destinations-container h1 {
   background: linear-gradient(90deg,#24243e, #0984d6, #24243e);
   width: 100%;
@@ -153,9 +118,8 @@ nav ul li a:hover {
   font-family: fantasy;
   font-size: 3rem;
   margin-bottom: 1.5rem;
-  color:#fdfefe;
+  color:#f2f7f7;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  
 }
 
 .loading-message,
@@ -164,16 +128,12 @@ nav ul li a:hover {
   color: #131313;
   margin-top: 2rem;
 }
-
-
-
 .destination-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgb(5, 254, 250);
+  box-shadow: 0 8px 16px rgb(12, 12, 12);
 }
-
 .destination-item h3 {
-  background: linear-gradient(90deg,#24243e, #0984d6, #24243e);
+  background: linear-gradient(90deg,#398AC6, #C67539, #24243e);
   border-radius: 50px;
   font-style: italic;
   font-size: 1.8rem;
@@ -181,27 +141,23 @@ nav ul li a:hover {
   margin-bottom: 0.5rem;
   text-align: center;
 }
-
 .destination-item p {
   font-size: 1.3rem;
-  color: #f9f9fb;
+  color: #02021b;
   text-align: center;
 }
 .destinations-list {
-
   padding: 0;
   margin: 0;
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   gap: 2rem;
 }
-
 .input-container {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
 }
-
 .input-container input {
   flex: 1;
   padding: 0.8rem;
@@ -209,7 +165,6 @@ nav ul li a:hover {
   border-radius: 6px;
   font-size: 1rem;
 }
-
 .input-container button {
   padding: 0.8rem 1.5rem;
   background-color: #007bff;
@@ -219,9 +174,8 @@ nav ul li a:hover {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .input-container button:hover {
-  background-color: #0056b3;
+  background-color:#398AC6;
 }
 
 .message {
@@ -289,7 +243,7 @@ form {
   display:flex;
   flex-direction: column;
   gap: 20px;
-  box-shadow: 0 8px 16px rgb(5, 254, 250);
+  box-shadow: 0 8px 16px rgb(0, 19, 19);
 background-image:url(../public/pexels-nubikini-386009.jpg) ;
 background-size: cover;
 background-repeat: no-repeat;
@@ -339,7 +293,7 @@ button:hover {
 
 /* Search and Booking Styles - Futuristic Look */
 .search-and-booking {
-  background: linear-gradient(135deg, rgba(30, 30, 50, 0.7), rgba(60, 60, 100, 0.7));
+  background: linear-gradient(135deg, rgba(6, 139, 143, 0.7), rgba(15, 166, 126, 0.7));
 
   text-align: center;
   padding: 2.5rem;

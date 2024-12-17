@@ -1,47 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import useFetch from './useFetch';
 
 const Destinations = () => {
-  const [destinations, setDestinations] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  // Search link for navigation
-  const searchLink = [
-    { path: '/search-and-booking', label: '🔍Search' }
-  ];
-
-  useEffect(() => {
-    // Replace with a real API endpoint
-    fetch('https://db-server1.vercel.app/destinations')
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setDestinations(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError(error.message);
-        setLoading(false);
-      });
-  }, []);
+  const { data: destinations, loading, error } = useFetch('https://db-server1.vercel.app/destinations');
 
   return (
     <div className="destinations-container">
-
-      
-      {searchLink.map((link) => (
-        <Link key={link.path} to={link.path} className="search-and-booking">
-          {link.label}
-        </Link>
-      ))}
+      <Link to="/search-and-booking" className="search-and-booking">🔍Search</Link>
       <h1>Top Destinations</h1>
 
-      {/* Conditional rendering based on loading, error, and fetched data */}
       {loading ? (
         <p className="loading-message">Loading destinations...</p>
       ) : error ? (
